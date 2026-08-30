@@ -1,8 +1,8 @@
 # Obelinf MCP Server
 
-Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obelinf](https://obelinf.com) — the network and infrastructure documentation platform. Connect AI agents like Claude, Cursor, or Codex to your infrastructure records and let them query, answer, and update sites, racks, devices, IP address space, and cabling through one endpoint.
+Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obelinf](https://obelinf.com), the network and infrastructure documentation platform. Connect AI agents like Claude, Cursor, or Codex to your infrastructure records and let them query, answer, and update sites, racks, devices, IP address space, and cabling through one endpoint.
 
-> **Obelinf is a closed-source SaaS product.** This repository does not contain the server's source code — it holds the MCP listing metadata, connection docs, the changelog for the MCP surface, and the public issue tracker.
+> This repository does not contain the server's source code. It holds the MCP listing metadata, connection docs, the changelog for the MCP surface, and the public issue tracker.
 
 - Website: <https://obelinf.com>
 - API documentation: <https://obelinf.com/docs/api/>
@@ -11,7 +11,7 @@ Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obe
 ## Quick start
 
 1. **Sign in** at [obelinf.com](https://obelinf.com) and open your organization. MCP is available on **all plans**, including the free Personal plan.
-2. **Create an API key**: Dashboard → **API Keys** → create a key and choose a scope — `Read Only` or `Full Access`. Copy it when shown; it is only displayed once.
+2. **Create an API key**: Dashboard → **API Keys** → create a key and choose a scope: `Read Only` or `Full Access`. Copy it when shown; it is only displayed once.
 3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/<your-org-slug>/mcp`, where `<your-org-slug>` is your organization slug from the dashboard URL.
 
 ### Claude Code
@@ -98,4 +98,4 @@ git tag v1.0.1
 git push origin v1.0.1
 ```
 
-The [publish workflow](.github/workflows/publish.yml) validates `server.json` and publishes it using GitHub OIDC — no registry secrets required.
+The [publish workflow](.github/workflows/publish.yml) validates `server.json` and publishes it using GitHub OIDC, with no registry secrets required.
