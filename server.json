@@ -3,7 +3,7 @@
   "name": "io.github.Obelinf/mcp",
   "title": "Obelinf",
   "description": "MCP server for Obelinf, the network documentation platform. Sites, racks, devices, IPs, VLANs.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "websiteUrl": "https://obelinf.com",
   "icons": [
     {
@@ -19,7 +19,7 @@
   "remotes": [
     {
       "type": "streamable-http",
-      "url": "https://api.obelinf.com/{orgSlug}/mcp",
+      "url": "https://api.obelinf.com/mcp?org={orgSlug}",
       "variables": {
         "orgSlug": {
           "description": "Your Obelinf organization slug, as shown in your dashboard URL",

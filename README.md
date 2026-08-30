@@ -12,12 +12,12 @@ Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obe
 
 1. **Sign in** at [obelinf.com](https://obelinf.com) and open your organization. MCP is available on **all plans**, including the free Personal plan.
 2. **Create an API key**: Dashboard → **API Keys** → create a key and choose a scope: `Read Only` or `Full Access`. Copy it when shown; it is only displayed once.
-3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/<your-org-slug>/mcp`, where `<your-org-slug>` is your organization slug from the dashboard URL.
+3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/mcp?org=<your-org-slug>`, where `<your-org-slug>` is your organization slug from the dashboard URL.
 
 ### Claude Code
 
 ```bash
-claude mcp add --transport http obelinf "https://api.obelinf.com/<your-org-slug>/mcp" \
+claude mcp add --transport http obelinf "https://api.obelinf.com/mcp?org=<your-org-slug>" \
   --header "Authorization: Bearer YOUR_API_KEY"
 ```
 
@@ -27,7 +27,7 @@ claude mcp add --transport http obelinf "https://api.obelinf.com/<your-org-slug>
 {
   "mcpServers": {
     "obelinf": {
-      "url": "https://api.obelinf.com/<your-org-slug>/mcp",
+      "url": "https://api.obelinf.com/mcp?org=<your-org-slug>",
       "headers": { "Authorization": "Bearer YOUR_API_KEY" }
     }
   }
@@ -41,7 +41,7 @@ claude mcp add --transport http obelinf "https://api.obelinf.com/<your-org-slug>
   "servers": {
     "obelinf": {
       "type": "http",
-      "url": "https://api.obelinf.com/<your-org-slug>/mcp",
+      "url": "https://api.obelinf.com/mcp?org=<your-org-slug>",
       "headers": { "Authorization": "Bearer YOUR_API_KEY" }
     }
   }
@@ -54,7 +54,7 @@ Other MCP clients: point them at the URL above over Streamable HTTP and send the
 
 | Property | Value |
 | --- | --- |
-| Endpoint | `https://api.obelinf.com/{orgSlug}/mcp` |
+| Endpoint | `https://api.obelinf.com/mcp?org={orgSlug}` |
 | Transport | MCP Streamable HTTP |
 | Authentication | Scoped API keys (`Authorization: Bearer`) |
 | Rate limit | 100 requests per minute |
