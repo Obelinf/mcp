@@ -1,0 +1,6 @@
+# mcp-publisher binary + local auth state (downloaded for manual testing)
+mcp-publisher
+.mcp-publisher/
+
+# OS / editor
+.DS_Store

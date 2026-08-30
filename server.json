@@ -1,0 +1,31 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.obelinf/mcp",
+  "title": "Obelinf",
+  "description": "Hosted MCP server for Obelinf, the network and infrastructure documentation platform. AI agents can query and update sites, racks, devices, subnets, IP addresses, VLANs, VRFs, cables, MAC addresses, and contacts through scoped API keys.",
+  "version": "1.0.0",
+  "websiteUrl": "https://obelinf.com",
+  "icons": [
+    {
+      "src": "https://obelinf.com/logo-512.png",
+      "mimeType": "image/png",
+      "sizes": ["512x512"]
+    }
+  ],
+  "repository": {
+    "url": "https://github.com/Obelinf/mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.obelinf.com/{orgSlug}/mcp",
+      "variables": {
+        "orgSlug": {
+          "description": "Your Obelinf organization slug, as shown in your dashboard URL",
+          "isRequired": true
+        }
+      }
+    }
+  ]
+}
