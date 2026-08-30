@@ -88,14 +88,4 @@ Start agents on a Read Only key, review their diffs, then promote to Full Access
 ## Support
 
 - Bug reports and feature requests for the MCP surface: [open an issue](https://github.com/Obelinf/mcp/issues)
-
-## Maintainers: publishing to the MCP Registry
-
-This repository publishes `server.json` to the [official MCP Registry](https://registry.modelcontextprotocol.io) as `io.github.obelinf/mcp`. To release, bump `version` in `server.json`, add a `CHANGELOG.md` entry, then tag:
-
-```bash
-git tag v1.0.1
-git push origin v1.0.1
-```
-
-The [publish workflow](.github/workflows/publish.yml) validates `server.json` and publishes it using GitHub OIDC, with no registry secrets required.
+- Plans, pricing, and enterprise agreements: [Contact sales](https://obelinf.com/contact/sales/)
