@@ -1,0 +1,39 @@
+{
+  "name": "obelinf",
+  "version": "1.0.2",
+  "description": "MCP server for Obelinf, the network and infrastructure documentation platform. Query and update sites, racks, devices, subnets, IPs, VLANs, VRFs, cables, MAC addresses, and contacts from Cursor, Claude, or any MCP client over Streamable HTTP.",
+  "author": {
+    "name": "Obelinf"
+  },
+  "homepage": "https://obelinf.com",
+  "repository": "https://github.com/Obelinf/mcp",
+  "license": "MIT",
+  "logo": "https://obelinf.com/logo-512.png",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "dcim",
+    "ipam",
+    "network",
+    "network-infrastructure",
+    "infrastructure",
+    "devops",
+    "ai-agents"
+  ],
+  "variables": {
+    "type": "object",
+    "properties": {
+      "ORG_SLUG": {
+        "type": "string",
+        "title": "Organization slug",
+        "description": "Your Obelinf organization slug, as shown in your dashboard URL."
+      },
+      "OBELINF_API_KEY": {
+        "type": "string",
+        "title": "Obelinf API key",
+        "description": "Scoped API key from Dashboard → API Keys. Use Read Only for safe exploration and Full Access for writes. Shown only once at creation."
+      }
+    },
+    "required": ["ORG_SLUG", "OBELINF_API_KEY"]
+  }
+}

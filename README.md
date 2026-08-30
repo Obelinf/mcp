@@ -14,6 +14,12 @@ Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obe
 2. **Create an API key**: Dashboard → **API Keys** → create a key and choose a scope: `Read Only` or `Full Access`. Copy it when shown; it is only displayed once.
 3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/mcp?org=<your-org-slug>`, where `<your-org-slug>` is your organization slug from the dashboard URL.
 
+### Cursor (plugin)
+
+Install the `Obelinf/mcp` repository as a Cursor plugin from the [Cursor directory](https://cursor.directory). The plugin declares `ORG_SLUG` and `OBELINF_API_KEY` as variables — set them once under **Plugins → Configure** and the server connects automatically. No manual JSON editing needed.
+
+To add it manually instead, use the config below.
+
 ### Claude Code
 
 ```bash

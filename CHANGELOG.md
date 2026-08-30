@@ -2,6 +2,12 @@
 
 Notable changes to the Obelinf MCP server: new tools, endpoint behavior, and connection docs. This file tracks the MCP surface itself; the changelog of your organization's data lives inside Obelinf (tool: `list_changelog`).
 
+## [1.0.2] - 2026-08-30
+
+### Added
+
+- Cursor plugin distribution via `Obelinf/mcp`: added `.mcp.json` and `.cursor-plugin/plugin.json` so the server can be installed and configured from the Cursor marketplace / [cursor.directory](https://cursor.directory). The organization slug (`ORG_SLUG`) and API key (`OBELINF_API_KEY`) are declared as plugin variables and set per-user at install time.
+
 ## [1.0.1] - 2026-08-30
 
 ### Changed
