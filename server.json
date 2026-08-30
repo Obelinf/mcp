@@ -1,6 +1,6 @@
 {
   "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
-  "name": "io.github.obelinf/mcp",
+  "name": "io.github.Obelinf/mcp",
   "title": "Obelinf",
   "description": "MCP server for Obelinf, the network documentation platform. Sites, racks, devices, IPs, VLANs.",
   "version": "1.0.0",

@@ -6,7 +6,7 @@ Notable changes to the Obelinf MCP server: new tools, endpoint behavior, and con
 
 ### Added
 
-- Initial publication to the official MCP Registry (`io.github.obelinf/mcp`), remote endpoint `https://api.obelinf.com/{orgSlug}/mcp` (Streamable HTTP).
+- Initial publication to the official MCP Registry (`io.github.Obelinf/mcp`), remote endpoint `https://api.obelinf.com/{orgSlug}/mcp` (Streamable HTTP).
 - 52 tools:
   - `search`: cross-resource full-text search
   - Sites, racks, devices, subnets, IP addresses, VLANs, VRFs, cables, MAC addresses, and contacts: full `list_*` / `get_*` / `create_*` / `update_*` / `delete_*` coverage for each
