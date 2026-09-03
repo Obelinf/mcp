@@ -14,6 +14,10 @@ Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obe
 2. **Create an API key**: Dashboard → **API Keys** → create a key and choose a scope: `Read Only` or `Full Access`. Copy it when shown; it is only displayed once.
 3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/mcp?org=<your-org-slug>`, where `<your-org-slug>` is your organization slug from the dashboard URL.
 
+### ChatGPT
+
+ChatGPT uses OAuth. Add the MCP endpoint and complete the Obelinf approval flow when prompted. Google and GitHub remain the available Obelinf sign-in methods; ChatGPT receives a short-lived, organization-scoped MCP token after approval.
+
 ### Cursor (plugin)
 
 Install the `Obelinf/mcp` repository as a Cursor plugin from the [Cursor directory](https://cursor.directory). The plugin declares `ORG_SLUG` and `OBELINF_API_KEY` as variables — set them once under **Plugins → Configure** and the server connects automatically. No manual JSON editing needed.
@@ -62,7 +66,7 @@ Other MCP clients: point them at the URL above over Streamable HTTP and send the
 | --- | --- |
 | Endpoint | `https://api.obelinf.com/mcp?org={orgSlug}` |
 | Transport | MCP Streamable HTTP |
-| Authentication | Scoped API keys (`Authorization: Bearer`) |
+| Authentication | OAuth for ChatGPT; scoped API keys for other clients |
 | Rate limit | 100 requests per minute |
 | Availability | All plans |
 | Tools | 52 |
