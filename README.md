@@ -12,7 +12,7 @@ Hosted [Model Context Protocol](https://modelcontextprotocol.io) server for [Obe
 
 1. **Sign in** at [obelinf.com](https://obelinf.com) and open your organization. MCP is available on **all plans**, including the free Personal plan.
 2. **Create an API key**: Dashboard → **API Keys** → create a key and choose a scope: `Read Only` or `Full Access`. Copy it when shown; it is only displayed once.
-3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/mcp?org=<your-org-slug>`, where `<your-org-slug>` is your organization slug from the dashboard URL.
+3. **Add the server** to your MCP client. Your endpoint is `https://api.obelinf.com/mcp`. The organization is selected from your authenticated Obelinf account.
 
 ### ChatGPT
 
@@ -27,7 +27,7 @@ To add it manually instead, use the config below.
 ### Claude Code
 
 ```bash
-claude mcp add --transport http obelinf "https://api.obelinf.com/mcp?org=<your-org-slug>" \
+claude mcp add --transport http obelinf "https://api.obelinf.com/mcp" \
   --header "Authorization: Bearer YOUR_API_KEY"
 ```
 
@@ -37,7 +37,7 @@ claude mcp add --transport http obelinf "https://api.obelinf.com/mcp?org=<your-o
 {
   "mcpServers": {
     "obelinf": {
-      "url": "https://api.obelinf.com/mcp?org=<your-org-slug>",
+      "url": "https://api.obelinf.com/mcp",
       "headers": { "Authorization": "Bearer YOUR_API_KEY" }
     }
   }
@@ -51,7 +51,7 @@ claude mcp add --transport http obelinf "https://api.obelinf.com/mcp?org=<your-o
   "servers": {
     "obelinf": {
       "type": "http",
-      "url": "https://api.obelinf.com/mcp?org=<your-org-slug>",
+      "url": "https://api.obelinf.com/mcp",
       "headers": { "Authorization": "Bearer YOUR_API_KEY" }
     }
   }
@@ -64,7 +64,7 @@ Other MCP clients: point them at the URL above over Streamable HTTP and send the
 
 | Property | Value |
 | --- | --- |
-| Endpoint | `https://api.obelinf.com/mcp?org={orgSlug}` |
+| Endpoint | `https://api.obelinf.com/mcp` |
 | Transport | MCP Streamable HTTP |
 | Authentication | OAuth for ChatGPT; scoped API keys for other clients |
 | Rate limit | 100 requests per minute |
