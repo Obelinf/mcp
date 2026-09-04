@@ -2,6 +2,13 @@
 
 Notable changes to the Obelinf MCP server: new tools, endpoint behavior, and connection docs. This file tracks the MCP surface itself; the changelog of your organization's data lives inside Obelinf (tool: `list_changelog`).
 
+## [1.0.3] - 2026-09-04
+
+### Changed
+
+- Removed the organization slug from the MCP endpoint. Authenticated API keys and OAuth tokens now determine the organization.
+- Updated Cursor and listing metadata to use `https://api.obelinf.com/mcp`.
+
 ## [1.0.2] - 2026-08-30
 
 ### Added

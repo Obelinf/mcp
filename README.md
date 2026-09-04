@@ -20,7 +20,7 @@ ChatGPT uses OAuth. Add the MCP endpoint and complete the Obelinf approval flow 
 
 ### Cursor (plugin)
 
-Install the `Obelinf/mcp` repository as a Cursor plugin from the [Cursor directory](https://cursor.directory). The plugin declares `ORG_SLUG` and `OBELINF_API_KEY` as variables — set them once under **Plugins → Configure** and the server connects automatically. No manual JSON editing needed.
+Install the `Obelinf/mcp` repository as a Cursor plugin from the [Cursor directory](https://cursor.directory). Set `OBELINF_API_KEY` once under **Plugins → Configure** and the server connects automatically. No manual JSON editing needed.
 
 To add it manually instead, use the config below.
 

@@ -3,7 +3,7 @@
   "name": "io.github.Obelinf/mcp",
   "title": "Obelinf",
   "description": "MCP server for Obelinf, the network documentation platform. Sites, racks, devices, IPs, VLANs.",
-  "version": "1.0.1",
+  "version": "1.0.3",
   "websiteUrl": "https://obelinf.com",
   "icons": [
     {

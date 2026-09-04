@@ -1,7 +1,7 @@
 {
   "mcpServers": {
     "obelinf": {
-      "url": "https://api.obelinf.com/mcp?org=${ORG_SLUG}",
+      "url": "https://api.obelinf.com/mcp",
       "headers": {
         "Authorization": "Bearer ${OBELINF_API_KEY}"
       }

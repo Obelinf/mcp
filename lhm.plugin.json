@@ -1,8 +1,8 @@
 {
   "identifier": "obelinf-mcp",
   "name": "Obelinf MCP",
-  "description": "Query and update your network and infrastructure documentation, including sites, racks, devices, subnets, IPs, VLANs, VRFs, cables, MAC addresses, and contacts, from any MCP client. Connect to the Obelinf endpoint (https://api.obelinf.com/mcp?org=<your-org-slug>) with a scoped API key sent as an Authorization: Bearer header.",
-  "version": "1.0.1",
+  "description": "Query and update your network and infrastructure documentation, including sites, racks, devices, subnets, IPs, VLANs, VRFs, cables, MAC addresses, and contacts, from any MCP client. Connect to https://api.obelinf.com/mcp with OAuth or a scoped API key sent as an Authorization: Bearer header.",
+  "version": "1.0.3",
   "author": "Obelinf",
   "authorUrl": "https://github.com/Obelinf",
   "homepage": "https://obelinf.com",
